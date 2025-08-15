@@ -10,7 +10,7 @@ export default function Play() {
 
   const [engine] = useState(() => createDeckEngine(CARDS));
   const [last, setLast] = useState<CardMeta | null>(null);
-  const [version, setVersion] = useState(0);
+  const [_version, setVersion] = useState(0);
 
   useEffect(() => {
     CARDS.forEach(c => { const i = new Image(); i.src = c.img; });
@@ -53,7 +53,7 @@ export default function Play() {
 
       {finished && (
         <Alert variant="success" className="mb-3">
-          Round finished — {engine.getRemainingCount() === 0 ? 'all cards drawn.' : 'all special cards shown.'}
+          Round finished — {engine.getRemainingCount() === 0 ? 'all cards drawn.' : 'all underground cards shown.'}
         </Alert>
       )}
 
@@ -71,7 +71,7 @@ export default function Play() {
             <Card.Body>
               <Card.Title className="d-flex justify-content-between align-items-center">
                 <span>{last ? last.title : '—'}</span>
-                <Badge bg={last?.category === 'SPECIAL' ? 'primary' : last ? 'success' : 'secondary'}>
+                <Badge bg={last?.category === 'UNDERGROUND' ? 'primary' : last ? 'success' : 'secondary'}>
                   {last ? last.category : '—'}
                 </Badge>
               </Card.Title>
