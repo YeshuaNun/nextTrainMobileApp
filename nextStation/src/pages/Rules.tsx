@@ -1,6 +1,6 @@
 import { Button, Col, Container, Row } from "react-bootstrap";
 
-const PDF_URL = '/docs/NextStationLondon-Rules-EN.pdf'
+const PDF_URL = import.meta.env.BASE_URL+'/docs/NextStationLondon-Rules-EN.pdf'
 
 
 export default function Rules() {

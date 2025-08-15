@@ -25,7 +25,7 @@ export default defineConfig({
       manifest: {
         name: 'Next Station',
         short_name: 'NextStation',
-        start_url: '/',
+        start_url: '/nextTrainMobileApp/',
         display: 'standalone',
         background_color: '#0f0f12',
         theme_color: '#0f0f12'

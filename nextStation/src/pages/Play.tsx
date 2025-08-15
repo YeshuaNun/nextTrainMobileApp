@@ -4,9 +4,14 @@ import cardsJson from "../data/nextStationLondon/cards/station_cards.json"
 import type { CardMeta } from "../types";
 import { createDeckEngine } from "../engine";
 
+const BASE = import.meta.env.BASE_URL;
+
 export default function Play() {
 
-  const CARDS = useMemo(() => cardsJson as CardMeta[], []);
+  const CARDS = useMemo(() => (cardsJson as CardMeta[]).map(c => ({
+  ...c,
+  img: BASE + c.img.replace(/^\//, ''),
+})), []);
 
   const [engine] = useState(() => createDeckEngine(CARDS));
   const [last, setLast] = useState<CardMeta | null>(null);
