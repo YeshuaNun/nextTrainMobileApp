@@ -16,7 +16,7 @@ export default function StationCard({
 
     return (
         <Card
-        role={onClick ? "buton" : undefined}
+        role={onClick ? "button" : undefined}
         onClick={onClick ? () => onClick(card) : undefined}
         >
             <Card.Img
