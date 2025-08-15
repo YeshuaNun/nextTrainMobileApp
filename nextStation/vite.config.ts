@@ -2,7 +2,6 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [
     react(),
@@ -31,6 +30,7 @@ export default defineConfig({
         theme_color: '#0f0f12'
       },
       workbox: {
+        maximumFileSizeToCacheInBytes: 50 * 1024 * 1024,
         globPatterns: ['**/*.{js,css,html,ico,png,svg,jpg,jpeg,pdf}'],
         runtimeCaching: [
           {
@@ -47,8 +47,7 @@ export default defineConfig({
             options: { cacheName: 'docs' }
           },
           {
-            // Fallback for same-origin navigations
-            urlPattern: ({ url }) => url.origin === self.location.origin,
+            urlPattern: ({ sameOrigin }) => sameOrigin,
             handler: 'StaleWhileRevalidate',
             options: { cacheName: 'static' }
           }
