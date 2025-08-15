@@ -6,8 +6,8 @@
     {"id": 5, "category": "STREET", "title": "Joker", "img": "/img/nextStationLondon/cards/station_cards/street_joker.png"},
     {"id": 6, "category": "STREET", "title": "Railroad Switch", "img": "/img/nextStationLondon/cards/station_cards/street_railroad_switch.png"},
     {"id": 7, "category": "UNDERGROUND", "title": "Circle", "img": "/img/nextStationLondon/cards/station_cards/underground_circle.png"},
-    {"id": 1, "category": "UNDERGROUND", "title": "Square", "img": "/img/nextStationLondon/cards/station_cards/underground_square.png"},
-    {"id": 1, "category": "UNDERGROUND", "title": "Triangle", "img": "/img/nextStationLondon/cards/station_cards/underground_triangle.png"},
-    {"id": 1, "category": "UNDERGROUND", "title": "Pentagon", "img": "/img/nextStationLondon/cards/station_cards/underground_pentagon.png"},
-    {"id": 1, "category": "UNDERGROUND", "title": "Joker", "img": "/img/nextStationLondon/cards/station_cards/underground_joker.png"}
+    {"id": 8, "category": "UNDERGROUND", "title": "Square", "img": "/img/nextStationLondon/cards/station_cards/underground_square.png"},
+    {"id": 9, "category": "UNDERGROUND", "title": "Triangle", "img": "/img/nextStationLondon/cards/station_cards/underground_triangle.png"},
+    {"id": 10, "category": "UNDERGROUND", "title": "Pentagon", "img": "/img/nextStationLondon/cards/station_cards/underground_pentagon.png"},
+    {"id": 11, "category": "UNDERGROUND", "title": "Joker", "img": "/img/nextStationLondon/cards/station_cards/underground_joker.png"}
 ]
